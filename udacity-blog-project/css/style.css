@@ -1,0 +1,189 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700|Zilla+Slab:300,400,500,600&display=swap");
+@import "header.css";
+@import "footer.css";
+@import "cards.css";
+/* social buttons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "social-buttons.css";
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .blog-post-content {
+    justify-content: flex-start;
+  }
+
+  .blog-post {
+    margin: 20px;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .blog-post-content {
+    justify-content: flex-start;
+  }
+
+  .blog-post {
+    margin: 20px;
+  }
+
+  aside {
+    display: none;
+
+  }
+  .social {
+    background-color: white;
+  }
+
+  .social a:link, a:visited {
+    color: #a7896d;
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+a:link, a:visited {
+  color: #a7896d;
+}
+
+a:hover {
+  color: #d7b698;
+}
+
+a:active {
+  color: grey;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 40px 1fr 100px;
+  grid-template-areas:
+      "header"
+      "blog-content"
+      "footer";
+  grid-row-gap: 10px;
+  border: 2px solid black;
+}
+
+.blog-post-content {
+  grid-area: blog-content;
+  padding-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.blog-post {
+  width: 60%;
+  margin: 20px;
+}
+
+aside {
+  width: 20%;
+  margin: 30px;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: "about" "archives" "elsewhere" "..";
+  gap: 20px 5px;
+  padding: 30px;
+}
+
+.about {
+  grid-area: about;
+  border-radius: 25px;
+  background-color: #ead2bc;
+  padding: 10px;
+}
+
+.archives {
+  grid-area: archives;
+  border-radius: 25px;
+  background-color: #e9e1b6;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.elsewhere {
+  grid-area: elsewhere;
+  border-radius: 25px;
+  background-color: #abbc8a;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.social
+{
+  margin-top: 100px;
+  padding-top: 20px;
+  border-top: 1px solid black;
+  background-color: white;
+}
+
+section {
+  font-family: "Zilla Slab", serif;
+}
+
+img {
+  border-radius: 50%;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  font-style: italic;
+  font-size: 30px;
+  font-family: "Zilla Slab", serif;
+  line-height: 60px;
+  quotes: "\00AB\00A0" "\00A0\00BB";
+}
+
+/* blockquote adapted from 
+https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+blockquote:after, blockquote:before {
+  color: #ccc;
+  font-size: 350%;
+
+}
+
+blockquote:after {                                                       
+  content: close-quote;
+  vertical-align: top;
+}
+
+blockquote:before {                                     
+  content: open-quote;
+  vertical-align: bottom;
+
+}
+
+figcaption {
+  display: block;
+  text-align: center;
+}
