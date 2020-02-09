@@ -169,7 +169,6 @@ https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
 blockquote:after, blockquote:before {
   color: #ccc;
   font-size: 350%;
-
 }
 
 blockquote:after {                                                       
