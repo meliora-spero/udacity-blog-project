@@ -179,7 +179,6 @@ blockquote:after {
 blockquote:before {                                     
   content: open-quote;
   vertical-align: bottom;
-
 }
 
 figcaption {
