@@ -1,0 +1,13 @@
+footer {
+  grid-area: footer;
+  background-image: url("../images/cat.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Zilla Slab", serif;
+  font-weight: lighter;
+}
